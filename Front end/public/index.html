@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Inicio</title>
+</head>
+<body style="text-align: center;">
+    <h2>Login</h2>
+    <input type="text" id="Username" placeholder="Username">
+    <input type="password" id="Password" placeholder="Password">
+    <button onclick="Entrar()">Entrar</button>
+
+    <script>
+        function Entrar() {
+            var u = document.getElementById('Username').value;
+            var p = document.getElementById('Password').value;
+            if (u == 'admin' && p == 'admin') {
+                alert('Bienvenido!');
+                window.location.href = './Inicio/index.html';
+            }
+        }
+    </script>
+
+</body>
+</html>
